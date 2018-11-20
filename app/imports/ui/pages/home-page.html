@@ -1,0 +1,39 @@
+<template name="Home_Page">
+
+  <div class="ui  container">
+    {{#if Template.subscriptionsReady}}
+    <table style="margin-top: 20px;" class="ui striped celled table">
+      <thead>
+      <tr>
+        <th>First</th>
+        <th>Last</th>
+        <th>Address</th>
+        <th>Phone</th>
+        <th>Email</th>
+        {{#If_Logged_In}}
+        <th>Edit</th>
+        {{/If_Logged_In}}
+      </tr>
+      </thead>
+
+      <tbody>
+      {{#each stuff in stuffList}}
+      <tr>
+        <td>{{stuff.first}}</td>
+        <td>{{stuff.last}}</td>
+        <td>{{stuff.address}}</td>
+        <td>{{stuff.phone}}</td>
+        <td>{{stuff.email}}</td>
+        {{#If_Logged_In}}
+        <td><a href="{{pathFor 'Edit_Stuff_Page' _id=stuff._id}}">Edit</a></td>
+        {{/If_Logged_In}}
+
+      </tr>
+      {{/each}}
+      </tbody>
+    </table>
+    {{else}}
+    {{> Loading}}
+    {{/if}}
+  </div>
+</template>
