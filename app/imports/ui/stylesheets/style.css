@@ -9,11 +9,16 @@ div.banner {
   background-image: url(/images/building2.jpg) ;
   clear: both;
 }
-.ui.inverted.menu {
-  margin-top :0px;
-  background-color:#819A97;
+.ui.menu {
+  padding-left :20px;
+  padding-right :20px;
 }
 h1 {
   padding-top:10px;
   color: white;
+}
+
+.top.image {
+  padding-top: 0px;
+
 }
