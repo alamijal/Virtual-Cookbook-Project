@@ -1,9 +1,34 @@
 <template name="Home_Page">
-  <div class="container">
+  <div class=" container">
   <img class="ui image" src="/images/pancakes.jpg" width="100%" >
     <div class="top-left">DID SOMEONE SAY PERSONAL RECIPES?</div>
     <div class="bottom-left">WE'LL TAKE CARE OF THAT.</div>
 </div>
+
+  <div class="ui grid">
+    <div class="ui three column row">
+      <div class="column">
+        <div class=" ui card container" width="60px" >
+          <a class="{{ isActiveRoute 'Add_Stuff_Page'}} item" href="{{ pathFor 'Add_Stuff_Page' }}">
+            <img class="ui centered large image" src="/images/pancakes.jpg" ><h2>ADD A RECIPE </h2></a>
+        </div>
+      </div>
+      <div class="column">
+        <div class=" ui card container" width="60px" >
+          <a class="{{ isActiveRoute 'Add_Stuff_Page'}} item" href="{{ pathFor 'Add_Stuff_Page' }}">
+            <img class="ui centered large image" src="/images/pancakes.jpg" ><h2>SEARCH A RECIPE</h2> </a>
+        </div>
+      </div>
+      <div class="column">
+        <div class=" ui card container" width="60px" >
+          <a class="{{ isActiveRoute 'Add_Stuff_Page'}} item" href="{{ pathFor 'Add_Stuff_Page' }}">
+            <img class="ui centered large image" src="/images/pancakes.jpg" ><h2>VIEW ALL RECIPES</h2> </a>
+        </div>
+      </div>
+      </div>
+
+    </div>
+
   <div class="ui  container">
     {{#if Template.subscriptionsReady}}
     <table style="margin-top: 20px;" class="ui striped celled table">

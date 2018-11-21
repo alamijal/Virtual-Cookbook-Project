@@ -43,3 +43,18 @@ h1 {
   text-align: center;
   color: white;
 }
+.ui.grid {
+  background-color:#F6F5F2;
+  padding-top:50px;
+  padding-bottom: 50px;
+  padding-right:50px;
+  padding-left: 50px;
+}
+.card.container {
+  background-color: white;
+}
+h2 {
+  text-color: black;
+
+}
+
