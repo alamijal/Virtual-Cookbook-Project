@@ -26,7 +26,7 @@
       </div>
       <div class="column">
         <div class=" ui card container" width="60px" >
-          <a class="{{ isActiveRoute 'Add_Stuff_Page'}} item" href="{{ pathFor 'Add_Stuff_Page' }}">
+          <a class="{{ isActiveRoute 'Add_Stuff_Page'}} item" href="{{ pathFor 'List_Stuff_Page' }}">
             <div class="ui image container">
               <img class="ui centered  image" src="/images/view.jpg" >
             </div><h2>VIEW ALL RECIPES</h2> </a>
@@ -36,40 +36,5 @@
 
     </div>
 
-  <div class="ui  container">
-    {{#if Template.subscriptionsReady}}
-    <table style="margin-top: 20px;" class="ui striped celled table">
-      <thead>
-      <tr>
-        <th>First</th>
-        <th>Last</th>
-        <th>Address</th>
-        <th>Phone</th>
-        <th>Email</th>
-        {{#If_Logged_In}}
-        <th>Edit</th>
-        {{/If_Logged_In}}
-      </tr>
-      </thead>
 
-      <tbody>
-      {{#each stuff in stuffList}}
-      <tr>
-        <td>{{stuff.first}}</td>
-        <td>{{stuff.last}}</td>
-        <td>{{stuff.address}}</td>
-        <td>{{stuff.phone}}</td>
-        <td>{{stuff.email}}</td>
-        {{#If_Logged_In}}
-        <td><a href="{{pathFor 'Edit_Stuff_Page' _id=stuff._id}}">Edit</a></td>
-        {{/If_Logged_In}}
-
-      </tr>
-      {{/each}}
-      </tbody>
-    </table>
-    {{else}}
-    {{> Loading}}
-    {{/if}}
-  </div>
 </template>
