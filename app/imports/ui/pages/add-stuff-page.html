@@ -5,33 +5,32 @@
     <div style="padding-top: 20px" class="ui  container">
 
      <form class="ui form">
-       <h4 class="ui dividing header">Add Contact</h4>
+       <h4 class="ui dividing header">Add Recipe</h4>
        <div class="fields">
          <div class ="sixteen wide field">
-           {{>afQuickField name='first'}}
+           {{>afQuickField name='recipe'}}
          </div>
-         <div class = "sixteen wide field">
-           {{>afQuickField name='last'}}
-         </div>
+
        </div>
 
        <div class = "thirty wide field">
-         {{>afQuickField name='address'}}
+         {{>afQuickField name='ingredients'}}
+       </div>
+       <div class = "thirty wide field">
+         {{>afQuickField name='directions'}}
        </div>
 
        <div class="fields">
          <div class ="sixteen wide field">
-           {{>afQuickField name='phone'}}
+           {{>afQuickField name='cuisineType'}}
          </div>
-         <div class = "sixteen wide field">
-           {{>afQuickField name='email'}}
-         </div>
+
        </div>
 
      </form>
       <!--<button type="insert" class="btn btn-primary">Submit</button>-->
       <button type="insert" class="ui button">
-        Submit
+        UPLOAD
       </button>
 
 
