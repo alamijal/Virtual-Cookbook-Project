@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="96cac28d-c728-4105-b528-b70c9bf9aa15" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/imports/api/stuff/stuff.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/imports/api/stuff/stuff.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/imports/ui/pages/add-stuff-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/imports/ui/pages/add-stuff-page.html" afterDir="false" />
-    </list>
+    <list default="true" id="96cac28d-c728-4105-b528-b70c9bf9aa15" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -79,7 +75,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/imports/api/stuff/stuff.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="470">
@@ -91,7 +87,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/imports/ui/pages/add-stuff-page.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="105">
@@ -335,12 +331,12 @@
       <workItem from="1542696058956" duration="5710000" />
       <workItem from="1542740987518" duration="1440000" />
       <workItem from="1542743971145" duration="12185000" />
-      <workItem from="1543260928493" duration="5391000" />
+      <workItem from="1543260928493" duration="5996000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24726000" />
+    <option name="totallyTimeSpent" value="25331000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -478,16 +474,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/imports/api/stuff/stuff.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="470">
-          <caret line="117" column="147" selection-start-line="117" selection-start-column="147" selection-end-line="117" selection-end-column="147" />
-          <folding>
-            <element signature="e#0#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/imports/ui/pages/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -501,6 +487,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/imports/api/stuff/stuff.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="470">
+          <caret line="117" column="147" selection-start-line="117" selection-start-column="147" selection-end-line="117" selection-end-column="147" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
