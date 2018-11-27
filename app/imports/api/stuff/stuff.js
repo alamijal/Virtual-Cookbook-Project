@@ -108,14 +108,14 @@ export const StuffSchema = new SimpleSchema({
   },
   cuisineType: {
     label: 'Cuisine Type',
-    type: String,
+    type: 'select-checkbox',
     optional: false,
     max: 50,
     autoform: {
       group: 'Stuff',
       placeholder: 'Dessert',
       type: 'select-checkbox',
-      options: function () { return [{ label: 'Breakfast', value: 'Breakfast' }, { label: 'Lunch', value: 2014 }, { label: 'Dinner', value: 'Dinner' }]; },
+      options: function () { return [{ label: 'Breakfast', value: 'Breakfast' }, { label: 'Lunch', value: 2014 }, { label: 'Dinner', value: 'Dinner' }, { label: 'Dessert', value: 'Dessert' }]; },
 
     },
   },
