@@ -35,6 +35,12 @@ FlowRouter.route('/stuff/:_id', {
     BlazeLayout.render('App_Body', { main: 'Edit_Stuff_Page' });
   },
 });
+FlowRouter.route('/stuff/:_id', {
+  name: 'View_Full_Recipe',
+  action() {
+    BlazeLayout.render('App_Body', { main: 'View__Full_Recipe' });
+  },
+});
 
 FlowRouter.notFound = {
   action() {

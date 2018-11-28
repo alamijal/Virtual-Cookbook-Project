@@ -1,11 +1,11 @@
-<template name="List_Stuff_Page">
+<template name="View_Full_Recipe">
   {{#If_Logged_In}}
     <div class="ui container">
       {{#if Template.subscriptionsReady}}
         <table style="margin-top: 20px" class="ui striped celled table">
           <thead>
           <tr>
-            <th>Recipe</th>
+            <th>Full Recipe Will be here</th>
             <th>Select</th>
 
             {{#If_Logged_In}}
@@ -18,8 +18,8 @@
           {{#each stuff in stuffList}}
             <tr>
               <td>{{stuff.recipe}}</td>
-              <td><a class="{{ isActiveRoute 'View_Full_Recipe'}} item" href="{{ pathFor 'View_Full_Recipe' _id=stuff._id}}">View Full Recipe</a></td>
 
+              <td><a href="{{pathFor 'Edit_Stuff_Page' _id=stuff._id}}">View Full Recipe</a></td>
             </tr>
           {{/each}}
           </tbody>
