@@ -5,13 +5,11 @@
         <table style="margin-top: 20px" class="ui striped celled table">
           <thead>
           <tr>
-            <th>First</th>
-            <th>Last</th>
-            <th>Address</th>
-            <th>Phone</th>
-            <th>Email</th>
+            <th>Recipe</th>
+            <th>Select</th>
+
             {{#If_Logged_In}}
-            <th>Edit</th>
+
             {{/If_Logged_In}}
           </tr>
           </thead>
@@ -19,12 +17,9 @@
           <tbody>
           {{#each stuff in stuffList}}
             <tr>
-              <td>{{stuff.first}}</td>
-              <td>{{stuff.last}}</td>
-              <td>{{stuff.address}}</td>
-              <td>{{stuff.phone}}</td>
-              <td>{{stuff.email}}</td>
-              <td><a href="{{pathFor 'Edit_Stuff_Page' _id=stuff._id}}">Edit</a></td>
+              <td>{{stuff.recipe}}</td>
+
+              <td><a href="{{pathFor 'Edit_Stuff_Page' _id=stuff._id}}">View Full Recipe</a></td>
             </tr>
           {{/each}}
           </tbody>
