@@ -9,14 +9,14 @@ export const Stuff = new Mongo.Collection('Stuff');
  * Create the schema for Stuff
  */
 export const StuffSchema = new SimpleSchema({
-  first: {
-    label: 'First',
+  recipe: {
+    label: 'Recipe Title',
     type: String,
     optional: false,
     max: 20,
     autoform: {
       group: 'Stuff',
-      placeholder: 'John',
+      placeholder: 'Taco',
     },
   },
   last: {
@@ -59,7 +59,7 @@ export const StuffSchema = new SimpleSchema({
       placeholder: 'john.doe@gmail.com',
     },
   },
-  recipe: {
+  recipes: {
     label: 'Recipe Title',
     type: String,
     optional: false,
