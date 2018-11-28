@@ -19,44 +19,39 @@ export const StuffSchema = new SimpleSchema({
       placeholder: 'Taco',
     },
   },
-  last: {
-    label: 'Last',
+  ingredients: {
+    label: 'Ingredients',
     type: String,
     optional: false,
     max: 20,
     autoform: {
+      type: 'textarea',
       group: 'Stuff',
       placeholder: 'Doe',
     },
   },
-  address: {
-    label: 'Address',
+  directions: {
+    label: 'Directions',
     type: String,
     optional: false,
     max: 50,
     autoform: {
+      type: 'textarea',
       group: 'Stuff',
       placeholder: '1234 NE Elmo ST',
     },
   },
-  phone: {
-    label: 'Phone',
+  cuisineType: {
+    label: 'Cuisine Type',
     type: String,
     optional: false,
     max: 20,
     autoform: {
       group: 'Stuff',
       placeholder: '123-456-1234',
-    },
-  },
-  email: {
-    label: 'Email',
-    type: String,
-    optional: false,
-    max: 50,
-    autoform: {
-      group: 'Stuff',
-      placeholder: 'john.doe@gmail.com',
+      type: 'select-radio-inline',
+      options: function () { return [{ label: 'Breakfast', value: 'Breakfast' }, { label: 'Lunch', value: 'Lunch' }, { label: 'Dinner', value: 'Dinner' },{ label: 'Dessert', value: 'Dessert' } ]; },
+
     },
   },
   recipes: {
