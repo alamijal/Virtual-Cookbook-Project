@@ -44,6 +44,15 @@ h1 {
   text-align: center;
   color: white;
 }
+
+
+.container.footer {
+  position: relative;
+  text-align: center;
+  color: black;
+  margin-bottom:30px ;
+  padding-top: 20px;
+}
 .ui.grid {
   background-color:#F6F5F2;
   padding-top:50px;
