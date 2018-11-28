@@ -22,6 +22,13 @@ FlowRouter.route('/add', {
   },
 });
 
+FlowRouter.route('/search', {
+  name: 'Search_Stuff_Page',
+  action() {
+    BlazeLayout.render('App_Body', { main: 'Search_Stuff_Page' });
+  },
+});
+
 FlowRouter.route('/stuff/:_id', {
   name: 'Edit_Stuff_Page',
   action() {

@@ -7,5 +7,9 @@ import './edit-stuff-page.js';
 import './home-page.html';
 import './home-page.js';
 
+import './search-stuff-page.html';
+import './search-stuff-page.js';
+
 import './list-stuff-page.html';
 import './list-stuff-page.js';
+
