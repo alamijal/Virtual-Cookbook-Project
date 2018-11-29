@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d5b973ce-5940-4557-98cf-db440db9060f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imports/ui/pages/search-stuff-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/imports/ui/pages/search-stuff-page.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -42,13 +42,13 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="85" />
-          <entry key="html" value="123" />
+          <entry key="html" value="124" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="85" />
-          <entry key="HTML" value="119" />
+          <entry key="HTML" value="120" />
           <entry key="SQL" value="4" />
         </counts>
       </usages-collector>
@@ -98,8 +98,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/imports/ui/pages/search-stuff-page.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="17" lean-forward="true" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
+            <state relative-caret-position="30">
+              <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -124,7 +124,6 @@
         <option value="$PROJECT_DIR$/imports/ui/pages/seach-page.html" />
         <option value="$PROJECT_DIR$/imports/ui/pages/search-page.js" />
         <option value="$PROJECT_DIR$/imports/ui/pages/home-page.html" />
-        <option value="$PROJECT_DIR$/imports/ui/pages/search-stuff-page.html" />
         <option value="$PROJECT_DIR$/imports/ui/pages/search-stuff-page.js" />
         <option value="$PROJECT_DIR$/imports/ui/pages/list-stuff-page.js" />
         <option value="$PROJECT_DIR$/imports/ui/pages/index.js" />
@@ -132,6 +131,7 @@
         <option value="$PROJECT_DIR$/imports/ui/layouts/footer.html" />
         <option value="$PROJECT_DIR$/imports/ui/stylesheets/style.css" />
         <option value="$PROJECT_DIR$/imports/ui/layouts/header.html" />
+        <option value="$PROJECT_DIR$/imports/ui/pages/search-stuff-page.html" />
       </list>
     </option>
   </component>
@@ -270,12 +270,12 @@
       <updated>1543433280590</updated>
       <workItem from="1543433284919" duration="1097000" />
       <workItem from="1543441483600" duration="2730000" />
-      <workItem from="1543516057330" duration="770000" />
+      <workItem from="1543516057330" duration="923000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6967000" />
+    <option name="totallyTimeSpent" value="7120000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="709" extended-state="6" />
@@ -484,8 +484,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/imports/ui/pages/search-stuff-page.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="17" lean-forward="true" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
+        <state relative-caret-position="30">
+          <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
         </state>
       </provider>
     </entry>
