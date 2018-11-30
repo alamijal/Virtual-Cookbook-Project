@@ -1,5 +1,11 @@
 <template name="Search_Stuff_Page">
   {{#If_Logged_In}}
+      <div class="search">
+        <form class="center aligned form-wrapper-2 cf">
+          <input type="text" id="searchValueI" placeholder="Recipe Name" required>
+          <button type="submit">Search</button>
+        </form>
+      </div>
     <div class="ui container">
       {{#if Template.subscriptionsReady}}
         <table style="margin-top: 20px" class="ui striped celled table">
@@ -15,7 +21,7 @@
           </thead>
 
           <tbody>
-          {{#each stuff in stuffList}}
+          {{#each stuff in stuffSearch}}
             <tr>
               <td>{{stuff.recipe}}</td>
 
