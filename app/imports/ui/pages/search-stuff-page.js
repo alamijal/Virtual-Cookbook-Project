@@ -7,19 +7,20 @@ import { Stuff } from '../../api/stuff/stuff.js';
 
 Template.Search_Stuff_Page.onCreated(function () {
   this.templateDictionary = new ReactiveDict();
-  this.templateDictionary.set('searchValue', null);
   this.searchParam = new ReactiveVar();
+  Meteor.subscribe('stuffSearch');
 });
 
-if (Meteor.isClient) {
-  Template.Search_Stuff_Page.events({
-    'submit .center.aligned.form-wrapper-2.cf': function (event, instance) {
-      console.log('submit triggered');
-      instance.searchParam.set($('#searchValue').val());
-      event.preventDefault();
-    },
-  });
-}
+Template.Search_Stuff_Page.events({
+  'submit .center.aligned.form-wrapper-2.cf': function (event, instance) {
+    console.log('submit triggered');
+    instance.searchParam.set($('#searchValue').val());
+    instance.templateDictionary.set('searchValue', $('#searchValue').val());
+    console.log(instance.templateDictionary.get('searchValue'));
+    event.preventDefault();
+  },
+});
+
 
 Template.Search_Stuff_Page.helpers({
 
@@ -28,7 +29,15 @@ Template.Search_Stuff_Page.helpers({
    */
   stuffSearch() {
     const instance = Template.instance();
-    console.log(instance.searchParam);
-    return Stuff.find({ recipe: 'Eggs' });
+    if (instance.templateDictionary.get('searchValue')) {
+      // If search parameter is defined, filter results
+      return Stuff.find({ recipe: instance.templateDictionary.get('searchValue') });
+    }
+    // Otherwise, return all of the stuff
+    return Stuff.find();
+  },
+
+  recipes: function () {
+    Meteor.subscribe('');
   },
 });
