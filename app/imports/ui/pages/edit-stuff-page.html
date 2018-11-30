@@ -6,35 +6,33 @@
     doc=getDoc  resetOnSuccess=true}}
     <div style="padding-top: 20px" class="ui  container">
 
+
+
       <form class="ui form">
-        <h4 class="ui dividing header">Add Contact</h4>
-        <div class="fields">
-          <div class ="sixteen wide field">
-            {{>afQuickField name='first'}}
-          </div>
-          <div class = "sixteen wide field">
-            {{>afQuickField name='last'}}
+        <div class="ui centered card">
+
+          <div class="content">
+
+              <a class="ui header">{{getDoc.recipe}}</a>
+              <h4 class="ui sub header">Ingredients</h4>
+            <div class="description">
+              {{getDoc.ingredients}}
+            </div>
+
+              <h4 class="ui sub header">Directions</h4>
+
+            <div class="description">
+              {{getDoc.directions}}
+            </div>
+
           </div>
         </div>
 
-        <div class = "sixteen wide field">
-          {{>afQuickField name='address'}}
-        </div>
 
-        <div class="fields">
-          <div class ="sixteen wide field">
-            {{>afQuickField name='phone'}}
-          </div>
-          <div class = "sixteen wide field">
-            {{>afQuickField name='email'}}
-          </div>
-        </div>
 
       </form>
       <!--<button type="insert" class="btn btn-primary">Submit</button>-->
-      <button type="insert" class="ui button">
-        Update
-      </button>
+      
 
 
     </div>
