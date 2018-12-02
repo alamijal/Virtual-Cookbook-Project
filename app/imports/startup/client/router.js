@@ -42,6 +42,14 @@ FlowRouter.route('/stuff/:_id', {
   },
 });
 
+FlowRouter.route('/listSearched/:_id', {
+  name: 'List_Searched_Stuff_Page',
+  action() {
+    BlazeLayout.render('App_Body', { main: 'List_Searched_Stuff_Page' });
+  },
+});
+
+
 FlowRouter.notFound = {
   action() {
     BlazeLayout.render('App_Body', { main: 'App_Not_Found' });
