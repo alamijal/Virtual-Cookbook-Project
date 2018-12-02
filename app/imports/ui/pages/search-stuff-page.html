@@ -1,6 +1,40 @@
 <template name="Search_Stuff_Page">
   {{#If_Logged_In}}
-    
+    <div class="search">
+      <form class="center aligned form-wrapper-2 cf">
+        <input type="text" placeholder="Recipe Name" required>
+        <button type="submit">Search</button>
+      </form>
+    </div>
+
+    <div class="ui container">
+      {{#if Template.subscriptionsReady}}
+        <table style="margin-top: 20px" class="ui striped celled table">
+          <thead>
+          <tr>
+            <th>Recipe</th>
+            <th>Select</th>
+
+            {{#If_Logged_In}}
+
+            {{/If_Logged_In}}
+          </tr>
+          </thead>
+
+          <tbody>
+          {{#each stuff in stuffList}}
+            <tr>
+              <td>{{stuff.recipe}}</td>
+              <td><a class="{{ isActiveRoute 'View_Full_Recipe'}} item" href="{{ pathFor 'View_Full_Recipe' _id=stuff._id}}">View Full Recipe</a></td>
+
+            </tr>
+          {{/each}}
+          </tbody>
+        </table>
+      {{else}}
+        {{> Loading}}
+      {{/if}}
+    </div>
   {{/If_Logged_In}}
 
 </template>

@@ -10,3 +10,4 @@ Template.Search_Stuff_Page.helpers({
     return Stuff.find();
   },
 });
+
