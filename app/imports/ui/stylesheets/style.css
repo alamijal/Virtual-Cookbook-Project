@@ -1,6 +1,10 @@
 body {
   /*padding-top: 61px; */ /* Move body of page below navbar. */
 }
+ .ui.floated.left.top.image{
+  padding-top:25px;
+   padding-bottom:0px;
+}
 
 div.banner {
   width: 100%;
