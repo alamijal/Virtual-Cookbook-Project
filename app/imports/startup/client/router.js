@@ -8,6 +8,33 @@ FlowRouter.route('/', {
   },
 });
 
+FlowRouter.route('/breakfastresults', {
+  name: 'List_Searched_Stuff_Page_Breakfast',
+  action() {
+    BlazeLayout.render('App_Body', { main: 'List_Searched_Stuff_Page_Breakfast' });
+  },
+});
+
+FlowRouter.route('/lunchresults', {
+  name: 'List_Searched_Stuff_Page_Lunch',
+  action() {
+    BlazeLayout.render('App_Body', { main: 'List_Searched_Stuff_Page_Lunch' });
+  },
+});
+
+FlowRouter.route('/dinnerresults', {
+  name: 'List_Searched_Stuff_Page_Dinner',
+  action() {
+    BlazeLayout.render('App_Body', { main: 'List_Searched_Stuff_Page_Dinner' });
+  },
+});
+
+FlowRouter.route('/dessertresults', {
+  name: 'List_Searched_Stuff_Page_Dessert',
+  action() {
+    BlazeLayout.render('App_Body', { main: 'List_Searched_Stuff_Page_Dessert' });
+  },
+});
 FlowRouter.route('/list', {
   name: 'List_Stuff_Page',
   action() {
@@ -41,14 +68,6 @@ FlowRouter.route('/stuff/:_id', {
     BlazeLayout.render('App_Body', { main: 'View__Full_Recipe' });
   },
 });
-
-FlowRouter.route('/listSearched/:_id', {
-  name: 'List_Searched_Stuff_Page',
-  action() {
-    BlazeLayout.render('App_Body', { main: 'List_Searched_Stuff_Page' });
-  },
-});
-
 
 FlowRouter.notFound = {
   action() {
