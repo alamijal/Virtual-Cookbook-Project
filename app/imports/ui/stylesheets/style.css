@@ -113,6 +113,11 @@ padding-bottom:20px;
    padding-bottom: 150px;
 
  }
+.center.aligned.button {
+  padding-right: 35%;
+  padding-left: 41%;
+}
+
 
 .pre {
   white-space: pre;
