@@ -22,7 +22,20 @@ h1 {
    border:0px;
    font-size: 3.0em;
  }
+.ui.top.header {
+  color: white;
+  padding-bottom:20px;
+  padding-top:10px;
+  position: absolute;
+  top: 50px;
+  left: 16px;
 
+}
+.ui.bottom.header {
+  color: black;
+
+  font-size:4.0em;
+}
 
 .ui.bottom.attached.right.floated.header {
   background-color: transparent;
