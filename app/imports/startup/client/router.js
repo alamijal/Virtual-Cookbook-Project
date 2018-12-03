@@ -35,6 +35,18 @@ FlowRouter.route('/dessertresults', {
     BlazeLayout.render('App_Body', { main: 'List_Searched_Stuff_Page_Dessert' });
   },
 });
+FlowRouter.route('/appetizersresults', {
+  name: 'List_Searched_Stuff_Page_Appetizers',
+  action() {
+    BlazeLayout.render('App_Body', { main: 'List_Searched_Stuff_Page_Appetizers' });
+  },
+});
+FlowRouter.route('/drinkssresults', {
+  name: 'List_Searched_Stuff_Page_Drinks',
+  action() {
+    BlazeLayout.render('App_Body', { main: 'List_Searched_Stuff_Page_Drinks' });
+  },
+});
 FlowRouter.route('/list', {
   name: 'List_Stuff_Page',
   action() {
