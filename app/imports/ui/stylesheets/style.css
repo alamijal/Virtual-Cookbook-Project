@@ -13,9 +13,24 @@
 }
 h1 {
   padding-top:10px;
-  color: white;
-}
 
+}
+.ui.top.header {
+  color: white;
+  padding-bottom:20px;
+  padding-top:10px;
+  position: absolute;
+  top: 50px;
+  left: 16px;
+  font-size:40px;
+}
+.ui.bottom.header {
+  color: black;
+  position: absolute;
+  bottom: 75px;
+  left: 575px;
+  font-size:50px;
+}
 .top.image {
   padding-top: 0px;
 
@@ -64,10 +79,18 @@ h1 {
  }
 
 h2 {
-background-color: white;
-  color:black;
+background-color: transparent;
+  color: white;
 padding-bottom:20px;
   padding-top:15px;
+  position: absolute;
+  top: 30px;
+  left: 16px;
+}
+.ui.header {
+  color: white;
+
+
 }
 .ui.image.container {
   padding-top:20px;
