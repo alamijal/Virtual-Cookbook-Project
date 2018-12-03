@@ -25,7 +25,9 @@ Template.Search_Stuff_Page.helpers({
     const instance = Template.instance();
     if (instance.templateDictionary.get('searchValue')) {
       // If search parameter is defined, filter results
-      return Stuff.find({ recipe: instance.templateDictionary.get('searchValue') });
+      const searchVal = instance.templateDictionary.get('searchValue');
+      const searchEXP = `.*${searchVal}.*`;
+      return Stuff.find({ recipe: { $regex: searchEXP, $options: 'i' } });
     }
     // Otherwise, return all of the stuff
     return Stuff.find();
