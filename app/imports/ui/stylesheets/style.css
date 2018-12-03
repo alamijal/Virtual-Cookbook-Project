@@ -122,3 +122,24 @@ padding-bottom:20px;
   white-space: pre-wrap;
 }
 
+ div.ui.viewFull.container {
+   /* The image used */
+   background-image: url(/images/eggs.jpg);
+   width: 100%;
+
+   /* Full height */
+   height: 100%;
+
+   /* Center and scale the image nicely */
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   padding-top:150px;
+   padding-bottom: 150px;
+  padding-right: 0;
+
+ }
+ .ui.fluid.centered.card {
+   background-color:rgba(255,255,255,0.9);
+
+ }
