@@ -1,7 +1,7 @@
 <template name="Edit_Page">
   {{#If_Logged_In}}
     <div style="padding-top: 20px" class = "ui container">
-      {{#autoForm collection=stuffCollection template="semanticUI" id="AddStuffForm" type="insert" resetOnSuccess=true}}
+      {{#autoForm collection=stuffCollection template="semanticUI" id="EditPageForm" type="update" doc=getDoc resetOnSuccess=true}}
         <div style="padding-top: 20px" class="ui  container">
 
           <form class="ui form">
@@ -23,9 +23,8 @@
 
 
           </form>
-          <!--<button type="insert" class="btn btn-primary">Submit</button>-->
           <button type="insert" class="ui button">
-            Submit
+            Update
           </button>
 
 

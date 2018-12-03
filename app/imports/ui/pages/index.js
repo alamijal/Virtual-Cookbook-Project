@@ -16,3 +16,6 @@ import './list-stuff-page.js';
 import './list-searched-stuff-page.html';
 import './list-searched-stuff-page.js';
 
+import './edit-page.html';
+import './edit-page.js';
+
