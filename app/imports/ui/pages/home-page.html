@@ -7,34 +7,34 @@
     <div class="ui very relaxed grid">
       <div class="three column row">
         <div class="column">
-          <div class="ui fluid card">
+          <a class="ui fluid card" href="{{pathFor 'Add_Stuff_Page' _id=stuff._id}}">
             <div class="ui image">
               <img src="/images/upload.png">
             </div>
             <div class="content">
               <a class="ui center aligned header">ADD A RECIPE</a>
             </div>
-          </div>
+          </a>
         </div>
         <div class="column">
-          <div class="ui fluid card">
+          <a class="ui fluid card" href="{{pathFor 'Search_Stuff_Page' _id=stuff._id}}">
             <div class="image">
               <img src="/images/search-01.png">
             </div>
             <div class="content">
               <a class="ui center aligned header">SEARCH A RECIPE</a>
             </div>
-          </div>
+          </a>
         </div>
         <div class="column">
-          <div class="ui fluid card">
+          <a class="ui fluid card" href="{{pathFor 'List_Stuff_Page' _id=stuff._id}}">
             <div class="image">
               <img src="/images/view.png">
             </div>
             <div class="content">
               <a class="ui center aligned header">VIEW ALL RECIPES</a>
             </div>
-          </div>
+          </a>
         </div>
       </div>
     </div>
