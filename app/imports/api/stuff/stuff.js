@@ -13,7 +13,7 @@ export const StuffSchema = new SimpleSchema({
     label: 'Recipe Title',
     type: String,
     optional: false,
-    max: 20,
+    max: 50,
     autoform: {
       group: 'Stuff',
       placeholder: 'Chocolate Chip Cookies',
@@ -23,7 +23,7 @@ export const StuffSchema = new SimpleSchema({
     label: 'Ingredients',
     type: String,
     optional: false,
-    max: 20,
+    max: 1000,
     autoform: {
       type: 'textarea',
       group: 'Stuff',
@@ -45,7 +45,7 @@ export const StuffSchema = new SimpleSchema({
     label: 'Directions',
     type: String,
     optional: false,
-    max: 50,
+    max: 1000,
     autoform: {
       type: 'textarea',
       group: 'Stuff',
@@ -63,7 +63,7 @@ export const StuffSchema = new SimpleSchema({
       group: 'Stuff',
       placeholder: '123-456-1234',
       type: 'select-radio-inline',
-      options: function () { return [{ label: 'Breakfast', value: 'Breakfast' }, { label: 'Lunch', value: 'Lunch' }, { label: 'Dinner', value: 'Dinner' },{ label: 'Dessert', value: 'Dessert' } ]; },
+      options: function () { return [{ label: 'Breakfast', value: 'Breakfast' }, { label: 'Lunch', value: 'Lunch' }, { label: 'Dinner', value: 'Dinner' }, { label: 'Dessert', value: 'Dessert' }, { label: 'Appetizers', value: 'Appetizers' }, { label: 'Drinks', value: 'Drinks' }]; },
 
     },
   },

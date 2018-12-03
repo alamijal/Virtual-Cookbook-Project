@@ -1,16 +1,11 @@
-body {
-  /*padding-top: 61px; */ /* Move body of page below navbar. */
+
+
+ .ui.floated.left.top.image{
+  padding-top:25px;
+   padding-bottom:0px;
 }
 
-div.banner {
-  width: 100%;
-  height: 400px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-image: url(/images/pancakes.jpg) ;
-  background-position: center; /* Center the image */
-  clear: both;
-}
+
 .ui.menu {
   padding-left :20px;
   padding-right :20px;
@@ -18,54 +13,105 @@ div.banner {
 }
 h1 {
   padding-top:10px;
-  color: white;
+
 }
 
+ .ui.top.attached.left.floated.header {
+   background-color: transparent;
+   color: white;
+   border:0px;
+   font-size: 3.0em;
+ }
+.ui.top.header {
+  color: white;
+  padding-bottom:20px;
+  padding-top:10px;
+  position: absolute;
+  top: 50px;
+  left: 16px;
+
+}
+.ui.bottom.header {
+  color: black;
+
+  font-size:4.0em;
+}
+
+.ui.bottom.attached.right.floated.header {
+  background-color: transparent;
+  border:0px;
+  font-size: 4.0em;
+}
 .top.image {
   padding-top: 0px;
 
 }
-.top-left {
-  position: absolute;
-  top: 30px;
-  left: 16px;
-  font-size: 50px;
-}
 
-.bottom-left {
-  position: absolute;
-  bottom: 30px;
-  left: 16px;
-  font-size: 50px;
-  color:black;
-}
+
 .container {
   position: relative;
   text-align: center;
   color: white;
 }
-.ui.grid {
+
+
+.container.footer {
+  position: relative;
+  text-align: center;
+  color: black;
+  margin-bottom:30px ;
+  padding-top: 20px;
+}
+.ui.search.grid {
   background-color:#F6F5F2;
   padding-top:50px;
   padding-bottom: 50px;
   padding-right:50px;
   padding-left: 50px;
 }
-.card.container {
-  background-color: white;
-  width: 300px;
+ .ui.very.relaxed.grid {
+   padding-top:50px;
+   padding-bottom: 50px;
+   padding-right:50px;
+   padding-left: 50px;
+   opacity: 0.8;
+ }
 
-}
 h2 {
-background-color: white;
-  color:black;
+  color: black;
 padding-bottom:20px;
   padding-top:15px;
+
 }
+
 .ui.image.container {
   padding-top:20px;
   height:280px;
   width: 250px;
   background-color: white;
 }
+.homepage.container {
+  background-color: black;
+  width: 100%;
+}
+ body, html {
+   height: 100%;
+ }
+
+ .homepage.container {
+   /* The image used */
+   background-image: url(/images/pancakes.jpg);
+
+   /* Full height */
+   height: 100%;
+
+   /* Center and scale the image nicely */
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   padding-top:150px;
+   padding-bottom: 150px;
+
+ }
+
 
