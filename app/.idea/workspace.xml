@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d5b973ce-5940-4557-98cf-db440db9060f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imports/ui/layouts/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/imports/ui/layouts/footer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imports/ui/pages/add-stuff-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/imports/ui/pages/add-stuff-page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imports/ui/pages/edit-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/imports/ui/pages/edit-page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imports/ui/pages/list-stuff-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/imports/ui/pages/list-stuff-page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imports/ui/stylesheets/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/imports/ui/stylesheets/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imports/ui/pages/edit-stuff-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/imports/ui/pages/edit-stuff-page.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -51,14 +46,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="146" />
-          <entry key="html" value="258" />
+          <entry key="html" value="270" />
           <entry key="js" value="66" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="146" />
-          <entry key="HTML" value="253" />
+          <entry key="HTML" value="265" />
           <entry key="JavaScript" value="66" />
           <entry key="SQL" value="5" />
         </counts>
@@ -119,11 +114,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/imports/ui/pages/edit-stuff-page.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-138">
-              <caret line="2" column="25" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="25" />
+            <state relative-caret-position="60">
+              <caret line="4" column="17" lean-forward="true" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -149,7 +147,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/imports/ui/pages/edit-page.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="30">
@@ -232,6 +230,7 @@
         <option value="$PROJECT_DIR$/imports/ui/pages/list-stuff-page.html" />
         <option value="$PROJECT_DIR$/imports/ui/stylesheets/style.css" />
         <option value="$PROJECT_DIR$/imports/ui/pages/edit-page.html" />
+        <option value="$PROJECT_DIR$/imports/ui/pages/edit-stuff-page.html" />
       </list>
     </option>
   </component>
@@ -368,7 +367,7 @@
     <property name="HbShouldOpenHtmlAsHb" value="enabled" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543877526780" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543878948653" />
     <property name="js.meteor.library.cached" value="$PROJECT_DIR$/.meteor" />
     <property name="js.meteor.library.was.enabled" value="true" />
     <property name="js.meteor.project" value="true" />
@@ -413,7 +412,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12858000" />
+    <option name="totallyTimeSpent" value="13619000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="25" y="23" width="1255" height="709" extended-state="0" />
@@ -681,13 +680,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/imports/ui/pages/edit-stuff-page.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-138">
-          <caret line="2" column="25" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/imports/ui/pages/list-stuff-page.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -695,6 +687,16 @@
           <folding>
             <element signature="n#style#0;n#div#0;n#template#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#table#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imports/ui/pages/edit-page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="55" selection-start-line="2" selection-start-column="55" selection-end-line="2" selection-end-column="55" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#template#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -709,10 +711,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/imports/ui/pages/edit-page.html">
+    <entry file="file://$PROJECT_DIR$/imports/ui/pages/edit-stuff-page.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="55" selection-start-line="2" selection-start-column="55" selection-end-line="2" selection-end-column="55" />
+        <state relative-caret-position="60">
+          <caret line="4" column="17" lean-forward="true" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
           <folding>
             <element signature="n#style#0;n#div#0;n#template#0;n#!!top" expanded="true" />
           </folding>
