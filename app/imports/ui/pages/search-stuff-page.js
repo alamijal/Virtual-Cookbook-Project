@@ -19,7 +19,7 @@ Template.Search_Stuff_Page.events({
 
 Template.Search_Stuff_Page.helpers({
   /**
-   * @returns {*} All of the Stuff documents.
+   * @returns documents with name matching searchValue
    */
   stuffSearch() {
     const instance = Template.instance();
