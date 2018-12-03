@@ -37,4 +37,22 @@ Template.List_Searched_Stuff_Page_Dessert.helpers({
     return Stuff.find({ cuisineType: 'Dessert' });
   },
 });
+Template.List_Searched_Stuff_Page_Appetizers.helpers({
+
+  /**
+   * @returns {*} All of the Stuff documents.
+   */
+  stuffList() {
+    return Stuff.find({ cuisineType: 'Appetizers' });
+  },
+});
+Template.List_Searched_Stuff_Page_Drinks.helpers({
+
+  /**
+   * @returns {*} All of the Stuff documents.
+   */
+  stuffList() {
+    return Stuff.find({ cuisineType: 'Drinks' });
+  },
+});
 

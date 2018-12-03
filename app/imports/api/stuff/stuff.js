@@ -63,7 +63,7 @@ export const StuffSchema = new SimpleSchema({
       group: 'Stuff',
       placeholder: '123-456-1234',
       type: 'select-radio-inline',
-      options: function () { return [{ label: 'Breakfast', value: 'Breakfast' }, { label: 'Lunch', value: 'Lunch' }, { label: 'Dinner', value: 'Dinner' },{ label: 'Dessert', value: 'Dessert' } ]; },
+      options: function () { return [{ label: 'Breakfast', value: 'Breakfast' }, { label: 'Lunch', value: 'Lunch' }, { label: 'Dinner', value: 'Dinner' }, { label: 'Dessert', value: 'Dessert' }, { label: 'Appetizers', value: 'Appetizers' }, { label: 'Drinks', value: 'Drinks' }]; },
 
     },
   },
