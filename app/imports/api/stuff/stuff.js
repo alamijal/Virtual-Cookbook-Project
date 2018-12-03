@@ -50,7 +50,11 @@ export const StuffSchema = new SimpleSchema({
       type: 'textarea',
       group: 'Stuff',
       placeholder: 'Preheat oven to 350 degrees F (175 degrees C).\n' +
-        'Cream together the butter, white sugar, and brown sugar until smooth. Beat in the eggs one at a time, then stir in the vanilla. Dissolve baking soda in hot water. Add to batter along with salt. Stir in flour, chocolate chips, and nuts. Drop by large spoonfuls onto ungreased pans.\n' +
+        'Cream together the butter, white sugar, and brown sugar until smooth. ' +
+        'Beat in the eggs one at a time, then stir in the vanilla.\n' +
+        'Dissolve baking ' +
+        'soda in hot water. Add to batter along with salt. Stir in flour, chocolate ' +
+        'chips, and nuts. Drop by large spoonfuls onto ungreased pans.\n' +
         'Bake for about 10 minutes in the preheated oven, or until edges are nicely browned',
     },
   },
@@ -63,8 +67,12 @@ export const StuffSchema = new SimpleSchema({
       group: 'Stuff',
       placeholder: '123-456-1234',
       type: 'select-radio-inline',
-      options: function () { return [{ label: 'Breakfast', value: 'Breakfast' }, { label: 'Lunch', value: 'Lunch' }, { label: 'Dinner', value: 'Dinner' }, { label: 'Dessert', value: 'Dessert' }, { label: 'Appetizers', value: 'Appetizers' }, { label: 'Drinks', value: 'Drinks' }]; },
-
+      options: function () {
+        return [{ label: 'Breakfast', value: 'Breakfast' },
+        { label: 'Lunch', value: 'Lunch' }, { label: 'Dinner', value: 'Dinner' },
+        { label: 'Dessert', value: 'Dessert' }, { label: 'Appetizers', value: 'Appetizers' },
+        { label: 'Drinks', value: 'Drinks' }];
+      },
     },
   },
 
