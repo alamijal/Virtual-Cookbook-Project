@@ -55,11 +55,15 @@ h1 {
 
 
 .container.footer {
-  position: relative;
+  width: 100%;
   text-align: center;
   color: black;
-  margin-bottom:30px ;
-  padding-top: 20px;
+  padding-top: 50px;
+  background-color:#cccccc;
+  margin-right: 0px;
+  padding-right: 0px;
+  padding-bottom: 50px;
+
 }
 .ui.search.grid {
   background-color:#F6F5F2;
@@ -78,7 +82,7 @@ h1 {
 
 h2 {
   color: black;
-padding-bottom:20px;
+  padding-bottom:20px;
   padding-top:15px;
 
 }
