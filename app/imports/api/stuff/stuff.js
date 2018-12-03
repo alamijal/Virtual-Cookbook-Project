@@ -23,7 +23,7 @@ export const StuffSchema = new SimpleSchema({
     label: 'Ingredients',
     type: String,
     optional: false,
-    max: 1000,
+    max: 10000,
     autoform: {
       type: 'textarea',
       group: 'Stuff',
@@ -45,7 +45,7 @@ export const StuffSchema = new SimpleSchema({
     label: 'Directions',
     type: String,
     optional: false,
-    max: 1000,
+    max: 10000,
     autoform: {
       type: 'textarea',
       group: 'Stuff',
