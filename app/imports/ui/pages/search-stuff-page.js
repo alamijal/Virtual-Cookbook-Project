@@ -10,7 +10,7 @@ Template.Search_Stuff_Page.onCreated(function () {
 });
 
 Template.Search_Stuff_Page.events({
-  'submit .center.aligned.form-wrapper-2.cf': function (event, instance) {
+  'submit .center.aligned.button': function (event, instance) {
     instance.templateDictionary.set('searchValue', $('#searchValue').val());
     event.preventDefault();
   },
