@@ -22,6 +22,8 @@
               <td>{{stuff.recipe}}</td>
               <td><a class="{{ isActiveRoute 'View_Full_Recipe'}}
               item" href="{{ pathFor 'View_Full_Recipe' _id=stuff._id}}">View Full Recipe</a></td>
+              <td><a class="{{ isActiveRoute 'Edit'}}
+              item" href="{{ pathFor 'Edit_Page' _id=stuff._id}}">Edit Recipe</a></td>
 
             </tr>
           {{/each}}
