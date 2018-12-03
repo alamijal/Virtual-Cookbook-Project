@@ -1,3 +1,4 @@
+
 <template name="List_Stuff_Page">
   {{#If_Logged_In}}
     <div class="ui container">
@@ -18,7 +19,8 @@
           {{#each stuff in stuffList}}
             <tr>
               <td>{{stuff.recipe}}</td>
-              <td><a class="{{ isActiveRoute 'View_Full_Recipe'}} item" href="{{ pathFor 'View_Full_Recipe' _id=stuff._id}}">View Full Recipe</a></td>
+              <td><a class="{{ isActiveRoute 'View_Full_Recipe'}}
+              item" href="{{ pathFor 'View_Full_Recipe' _id=stuff._id}}">View Full Recipe</a></td>
 
             </tr>
           {{/each}}
@@ -30,3 +32,6 @@
     </div>
   {{/If_Logged_In}}
 </template>
+
+
+
