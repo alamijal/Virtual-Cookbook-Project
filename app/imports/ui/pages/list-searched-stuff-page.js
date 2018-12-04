@@ -1,5 +1,44 @@
 import { Template } from 'meteor/templating';
+import { Session } from 'meteor/session';
+import { FlowRouter } from 'meteor/kadira:flow-router';
 import { Stuff } from '../../api/stuff/stuff.js';
+
+
+Template.List_Searched_Stuff_Page_Name.helpers({
+  /**
+   * @returns documents with name matching searchValue
+   */
+  stuffSearch() {
+    console.log(Session.get('searchValue'));
+    console.log('^^^ That be the parameter');
+    if (Session.get('searchValue')) {
+      // If search parameter is defined, filter results
+      const searchVal = Session.get('searchValue');
+      const searchEXP = `.*${searchVal}.*`;
+      return Stuff.find({ recipe: { $regex: searchEXP, $options: 'i' } });
+    }
+    // Otherwise, return all of the stuff
+    return Stuff.find();
+  },
+});
+
+Template.List_Searched_Stuff_Page_Ingredient.helpers({
+  /**
+   * @returns documents with name matching searchValue
+   */
+  stuffSearch() {
+    console.log(Session.get('searchIngredientValue'));
+    console.log('^^^ That be the parameter');
+    if (Session.get('searchIngredientValue')) {
+      // If search parameter is defined, filter results
+      const searchVal = Session.get('searchIngredientValue');
+      const searchEXP = `.*${searchVal}.*`;
+      return Stuff.find({ ingredients: { $regex: searchEXP, $options: 'i' } });
+    }
+    // Otherwise, return all of the stuff
+    return Stuff.find();
+  },
+});
 
 Template.List_Searched_Stuff_Page_Breakfast.helpers({
 
