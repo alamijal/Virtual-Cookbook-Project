@@ -1,5 +1,5 @@
 <template name="Search_Stuff_Page">
-
+<div class="ui search container">
     {{#If_Logged_In}}
       <h2 class="center aligned ui header">Search Recipes by Name</h2>
       <div class="search">
@@ -96,7 +96,7 @@
       </div>
     {{>Search_Ingredients_Page}}
     {{/If_Logged_In}}
-
+</div>
       </template>
       <template name="Search_Ingredients_Page">
           <h2 class="center aligned ui header">Search Recipes by Ingredient</h2>

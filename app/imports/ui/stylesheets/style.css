@@ -48,9 +48,9 @@ h1 {
 }
 
 
-.container {
-  position: relative;
-  color: white;
+.ui.search.container {
+  background-color:#F6F5F2;
+  width:100%;
 }
 
 
