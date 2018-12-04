@@ -9,9 +9,6 @@
             <th>Recipe</th>
             <th>Select</th>
 
-            {{#If_Logged_In}}
-
-            {{/If_Logged_In}}
           </tr>
           </thead>
 
@@ -44,9 +41,6 @@
             <th>Recipe</th>
             <th>Select</th>
 
-            {{#If_Logged_In}}
-
-            {{/If_Logged_In}}
           </tr>
           </thead>
 
@@ -78,9 +72,6 @@
             <th>Recipe</th>
             <th>Select</th>
 
-            {{#If_Logged_In}}
-
-            {{/If_Logged_In}}
           </tr>
           </thead>
 
@@ -113,9 +104,6 @@
             <th>Recipe</th>
             <th>Select</th>
 
-            {{#If_Logged_In}}
-
-            {{/If_Logged_In}}
           </tr>
           </thead>
 
@@ -147,9 +135,6 @@
             <th>Recipe</th>
             <th>Select</th>
 
-            {{#If_Logged_In}}
-
-            {{/If_Logged_In}}
           </tr>
           </thead>
 
@@ -181,9 +166,6 @@
             <th>Recipe</th>
             <th>Select</th>
 
-            {{#If_Logged_In}}
-
-            {{/If_Logged_In}}
           </tr>
           </thead>
 
@@ -205,3 +187,62 @@
   {{/If_Logged_In}}
 </template>
 
+<template name="List_Searched_Stuff_Page_Name">
+  {{#If_Logged_In}}
+    <div class="ui container">
+      {{#if Template.subscriptionsReady}}
+        <table style="margin-top: 20px" class="ui striped celled table">
+          <thead>
+          <tr>
+            <th>Recipe</th>
+            <th>Select</th>
+          </tr>
+          </thead>
+
+          <tbody>
+          {{#each stuff in stuffSearch}}
+            <tr>
+              <td>{{stuff.recipe}}</td>
+              <td><a class="{{ isActiveRoute 'View_Full_Recipe'}}
+              item" href="{{ pathFor 'View_Full_Recipe' _id=stuff._id}}">View Full Recipe</a></td>
+
+            </tr>
+          {{/each}}
+          </tbody>
+        </table>
+      {{else}}
+        {{> Loading}}
+      {{/if}}
+    </div>
+  {{/If_Logged_In}}
+</template>
+
+<template name="List_Searched_Stuff_Page_Ingredient">
+  {{#If_Logged_In}}
+    <div class="ui container">
+      {{#if Template.subscriptionsReady}}
+        <table style="margin-top: 20px" class="ui striped celled table">
+          <thead>
+          <tr>
+            <th>Recipe</th>
+            <th>Select</th>
+          </tr>
+          </thead>
+
+          <tbody>
+          {{#each stuff in stuffSearch}}
+            <tr>
+              <td>{{stuff.recipe}}</td>
+              <td><a class="{{ isActiveRoute 'View_Full_Recipe'}}
+              item" href="{{ pathFor 'View_Full_Recipe' _id=stuff._id}}">View Full Recipe</a></td>
+
+            </tr>
+          {{/each}}
+          </tbody>
+        </table>
+      {{else}}
+        {{> Loading}}
+      {{/if}}
+    </div>
+  {{/If_Logged_In}}
+</template>

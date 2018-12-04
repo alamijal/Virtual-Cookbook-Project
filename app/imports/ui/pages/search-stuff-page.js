@@ -1,18 +1,33 @@
 /* eslint-env jquery */
 import { Meteor } from 'meteor/meteor';
 import { Template } from 'meteor/templating';
+import { FlowRouter } from 'meteor/kadira:flow-router';
+import { Session } from 'meteor/session';
+import { AutoForm } from 'meteor/aldeed:autoform';
 import { ReactiveDict } from 'meteor/reactive-dict';
 import { Stuff } from '../../api/stuff/stuff.js';
 
+
 Template.Search_Stuff_Page.onCreated(function () {
   this.templateDictionary = new ReactiveDict();
+
   Meteor.subscribe('stuffSearch');
 });
 
+
 Template.Search_Stuff_Page.events({
-  'submit .center.aligned.button': function (event, instance) {
-    instance.templateDictionary.set('searchValue', $('#searchValue').val());
-    event.preventDefault();
+  'submit .center.aligned.button.name': function (event, instance) {
+    const params = { SearchValue: instance.templateDictionary.set('searchValue', $('#searchValue').val()) };
+    Session.set('searchValue', $('#searchValue').val());
+    FlowRouter.go('/nameresults/', params);
+    // event.preventDefault();
+  },
+
+  'submit .center.aligned.button.ingredient': function (event, instance) {
+    const params = { SearchValue: instance.templateDictionary.set('searchValue', $('#searchIngredientValue').val()) };
+    Session.set('searchIngredientValue', $('#searchIngredientValue').val());
+    FlowRouter.go('/ingredientresults/', params);
+    // event.preventDefault();
   },
 });
 
