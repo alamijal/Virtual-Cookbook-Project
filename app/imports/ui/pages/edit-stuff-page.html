@@ -1,6 +1,6 @@
 <template name="Edit_Stuff_Page">
   {{#If_Logged_In}}
-  <div style="padding-top: 20px" class = "ui container">
+  <div style="padding-top: 20px" class = "ui viewFull container">
     {{#autoForm collection=stuffCollection template="semanticUI" id="EditStuffForm"
     type="update"
     doc=getDoc  resetOnSuccess=true}}
@@ -13,15 +13,15 @@
 
           <div class="content">
 
-              <a class="ui header">{{getDoc.recipe}}</a>
-              <h4 class="ui sub header">Ingredients</h4>
+              <h2 style="color: #F15A24" class="ui header">{{getDoc.recipe}}</h2>
+              <h4 style="color: #F15A24" class="ui sub header">Ingredients</h4>
             <div class="description">
               <span class="pre"> {{getDoc.ingredients}} </span>
             </div>
 
-              <h4 class="ui sub header">Directions</h4>
+              <h4 style="color: #F15A24" class="ui sub header">Directions</h4>
 
-            <div class="description">
+            <div  class="description">
               <span class="pre">{{getDoc.directions}}</span>
             </div>
 
