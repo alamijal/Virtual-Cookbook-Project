@@ -3,32 +3,32 @@
     {{#If_Logged_In}}
       <h2 style="padding-top:3.5%;" class="center aligned ui header">Search Recipes by Name</h2>
       <div class="search">
-        <form class="center aligned button">
+        <form class="center aligned button name">
           <input type="text" id="searchValue" placeholder="Recipe Name" required>
           <button type="submit">Search</button>
         </form>
       </div>
 
-      <div class="ui container">
-        {{#if Template.subscriptionsReady}}
+      <!--<div class="ui container">-->
+        <!--{{#if Template.subscriptionsReady}}-->
 
 
-          <table style="margin-top: 20px" class="ui striped celled table">
-            <tbody>
-            {{#each stuff in stuffSearch}}
+          <!--<table style="margin-top: 20px" class="ui striped celled table">-->
+            <!--<tbody>-->
+            <!--{{#each stuff in stuffSearch}}-->
 
-              <tr>
-                <td>{{stuff.recipe}}</td>
+              <!--<tr>-->
+                <!--<td>{{stuff.recipe}}</td>-->
 
-                <td><a href="{{pathFor 'Edit_Stuff_Page' _id=stuff._id}}">View Full Recipe</a></td>
-              </tr>
-            {{/each}}
-            </tbody>
-          </table>
-        {{else}}
-          {{> Loading}}
-        {{/if}}
-      </div>
+                <!--<td><a href="{{pathFor 'Edit_Stuff_Page' _id=stuff._id}}">View Full Recipe</a></td>-->
+              <!--</tr>-->
+            <!--{{/each}}-->
+            <!--</tbody>-->
+          <!--</table>-->
+        <!--{{else}}-->
+          <!--{{> Loading}}-->
+        <!--{{/if}}-->
+      <!--</div>-->
 
       <h2 class="center aligned ui header">Search Recipes by Category</h2>
 
@@ -101,32 +101,32 @@
       <template name="Search_Ingredients_Page">
           <h2 class="center aligned ui header">Search Recipes by Ingredient</h2>
           <div class="search">
-            <form class="center aligned button">
-              <input type="text" id="searchValue2" placeholder="Ingredient" required>
+            <form class="center aligned button ingredient">
+              <input type="text" id="searchIngredientValue" placeholder="Ingredient" required>
               <button type="submit">Search</button>
             </form>
           </div>
 
-          <div class="ui container">
-            {{#if Template.subscriptionsReady}}
+          <!--<div class="ui container">-->
+            <!--{{#if Template.subscriptionsReady}}-->
 
 
-              <table style="margin-top: 20px" class="ui striped celled table">
-                <tbody>
-                {{#each stuff in stuffSearch}}
+              <!--<table style="margin-top: 20px" class="ui striped celled table">-->
+                <!--<tbody>-->
+                <!--{{#each stuff in stuffSearch}}-->
 
-                  <tr>
-                    <td>{{stuff.recipe}}</td>
+                  <!--<tr>-->
+                    <!--<td>{{stuff.recipe}}</td>-->
 
-                    <td><a href="{{pathFor 'Edit_Stuff_Page' _id=stuff._id}}">View Full Recipe</a></td>
-                  </tr>
-                {{/each}}
-                </tbody>
-              </table>
-            {{else}}
-              {{> Loading}}
-            {{/if}}
-          </div>
+                    <!--<td><a href="{{pathFor 'Edit_Stuff_Page' _id=stuff._id}}">View Full Recipe</a></td>-->
+                  <!--</tr>-->
+                <!--{{/each}}-->
+                <!--</tbody>-->
+              <!--</table>-->
+            <!--{{else}}-->
+              <!--{{> Loading}}-->
+            <!--{{/if}}-->
+          <!--</div>-->
 
       </template>
 

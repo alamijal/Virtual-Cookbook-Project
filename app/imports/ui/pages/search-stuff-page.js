@@ -65,20 +65,20 @@ Template.Search_Ingredients_Page.events({
 });
 
 
-Template.Search_Ingredients_Page.helpers({
-  /**
-   * @returns documents with name matching searchValue
-   */
-  stuffSearch() {
-    const instance = Template.instance();
-    // if (instance.templateDictionary.get('searchValue')) {
-    // If search parameter is defined, filter results
-    const searchVal = instance.templateDictionary.get('searchValue2');
-    const searchEXP = `.*${searchVal}.*`;
-    // return Stuff.find({ recipe: { $regex: searchEXP, $options: 'i' } });
-    // }
-    // Otherwise, return all of the stuff
-    return Stuff.find({ ingredients: { $regex: searchEXP, $options: 'i' } });
-  },
-});
+// Template.Search_Ingredients_Page.helpers({
+//   /**
+//    * @returns documents with name matching searchValue
+//    */
+//   stuffSearch() {
+//     const instance = Template.instance();
+//     // if (instance.templateDictionary.get('searchValue')) {
+//     // If search parameter is defined, filter results
+//     const searchVal = instance.templateDictionary.get('searchValue2');
+//     const searchEXP = `.*${searchVal}.*`;
+//     // return Stuff.find({ recipe: { $regex: searchEXP, $options: 'i' } });
+//     // }
+//     // Otherwise, return all of the stuff
+//     return Stuff.find({ ingredients: { $regex: searchEXP, $options: 'i' } });
+//   },
+// });
 
