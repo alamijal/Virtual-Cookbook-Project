@@ -70,6 +70,7 @@ h1 {
   padding-bottom: 50px;
   padding-right:50px;
   padding-left: 50px;
+  width: 100%;
 }
 .ui.very.relaxed.grid {
   padding-top:50px;
@@ -146,4 +147,9 @@ div.ui.viewFull.container {
 .ui.fluid.centered.card {
   background-color:rgba(255,255,255,0.9);
 
+}
+.ui.search.container {
+  width:100%;
+  background-color: #F6F5F2;
+  padding-bottom: 3.5%;
 }
