@@ -1,43 +1,43 @@
 <template name="Edit_Stuff_Page">
   {{#If_Logged_In}}
-  <div style="padding-top: 20px; padding-bottom: 300px" class = "ui container">
-    {{#autoForm collection=stuffCollection template="semanticUI" id="EditStuffForm"
-    type="update"
-    doc=getDoc  resetOnSuccess=true}}
-    <div style="padding-top: 20px" class="ui  container">
+    <div style="padding-top: 20px" class = "ui viewFull container">
+      {{#autoForm collection=stuffCollection template="semanticUI" id="EditStuffForm"
+                  type="update"
+                  doc=getDoc  resetOnSuccess=true}}
+        <div style="padding-top: 20px" class="ui  container">
 
 
 
-      <form class="ui form">
-        <div class="ui fluid centered card">
+          <form class="ui form">
+            <div class="ui fluid centered card">
 
-          <div class="content">
+              <div class="content">
 
-              <a class="ui header">{{getDoc.recipe}}</a>
-              <h4 class="ui sub header">Ingredients</h4>
-            <div class="description">
-              <span class="pre"> {{getDoc.ingredients}} </span>
+                <h2 style="color: #F15A24" class="ui header">{{getDoc.recipe}}</h2>
+                <h4 style="color: #F15A24" class="ui sub header">Ingredients</h4>
+                <div class="description">
+                  <span class="pre"> {{getDoc.ingredients}} </span>
+                </div>
+
+                <h4 style="color: #F15A24" class="ui sub header">Directions</h4>
+
+                <div  class="description">
+                  <span class="pre">{{getDoc.directions}}</span>
+                </div>
+
+              </div>
             </div>
 
-              <h4 class="ui sub header">Directions</h4>
 
-            <div class="description">
-              <span class="pre">{{getDoc.directions}}</span>
-            </div>
 
-          </div>
+          </form>
+          <!--<button type="insert" class="btn btn-primary">Submit</button>-->
+
+
+
         </div>
-
-
-
-      </form>
-      <!--<button type="insert" class="btn btn-primary">Submit</button>-->
-
-
-
+      {{/autoForm}}
     </div>
-    {{/autoForm}}
-  </div>
   {{/If_Logged_In}}
 
 </template>

@@ -1,8 +1,6 @@
-
-
- .ui.floated.left.top.image{
+.ui.floated.left.top.image{
   padding-top:25px;
-   padding-bottom:0px;
+  padding-bottom:0px;
 }
 
 
@@ -16,12 +14,12 @@ h1 {
 
 }
 
- .ui.top.attached.left.floated.header {
-   background-color: transparent;
-   color: white;
-   border:0px;
-   font-size: 3.0em;
- }
+.ui.top.attached.left.floated.header {
+  background-color: transparent;
+  color: white;
+  border:0px;
+  font-size: 3.0em;
+}
 .ui.top.header {
   color: white;
   padding-bottom:20px;
@@ -48,9 +46,9 @@ h1 {
 }
 
 
-.ui.search.container {
-  background-color:#F6F5F2;
-  width:100%;
+.container {
+  position: relative;
+  color: white;
 }
 
 
@@ -65,6 +63,7 @@ h1 {
   padding-bottom: 50px;
 
 }
+
 .ui.search.grid {
   background-color:#F6F5F2;
   padding-top:50px;
@@ -72,13 +71,13 @@ h1 {
   padding-right:50px;
   padding-left: 50px;
 }
- .ui.very.relaxed.grid {
-   padding-top:50px;
-   padding-bottom: 50px;
-   padding-right:50px;
-   padding-left: 50px;
-   opacity: 0.8;
- }
+.ui.very.relaxed.grid {
+  padding-top:50px;
+  padding-bottom: 50px;
+  padding-right:50px;
+  padding-left: 50px;
+  opacity: 0.8;
+}
 
 h2 {
   color: black;
@@ -97,25 +96,25 @@ h2 {
   background-color: black;
   width: 100%;
 }
- body, html {
-   height: 100%;
- }
+body, html {
+  height: 100%;
+}
 
- .homepage.container {
-   /* The image used */
-   background-image: url(/images/pancakes.jpg);
+.homepage.container {
+  /* The image used */
+  background-image: url(/images/pancakes.jpg);
 
-   /* Full height */
-   height: 100%;
+  /* Full height */
+  height: 100%;
 
-   /* Center and scale the image nicely */
-   background-position: center;
-   background-repeat: no-repeat;
-   background-size: cover;
-   padding-top:150px;
-   padding-bottom: 150px;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top:150px;
+  padding-bottom: 150px;
 
- }
+}
 .center.aligned.button {
   padding-right: 35%;
   padding-left: 41%;
@@ -126,25 +125,24 @@ h2 {
   white-space: pre-wrap;
 }
 
- div.ui.viewFull.container {
-   /* The image used */
-   background-image: url(/images/eggs.jpg);
-   width: 100%;
+div.ui.viewFull.container {
+  /* The image used */
+  background-image: url(/images/eggs.jpg);
+  width: 100%;
 
-   /* Full height */
-   height: 100%;
+  /* Full height */
+  height: 100%;
 
-   /* Center and scale the image nicely */
-   background-position: center;
-   background-repeat: no-repeat;
-   background-size: cover;
-   padding-top:150px;
-   padding-bottom: 150px;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top:150px;
+  padding-bottom: 150px;
   padding-right: 0;
 
- }
- .ui.fluid.centered.card {
-   background-color:rgba(255,255,255,0.9);
+}
+.ui.fluid.centered.card {
+  background-color:rgba(255,255,255,0.9);
 
- }
-
+}
