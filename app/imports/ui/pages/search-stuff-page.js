@@ -23,13 +23,47 @@ Template.Search_Stuff_Page.helpers({
    */
   stuffSearch() {
     const instance = Template.instance();
-    if (instance.templateDictionary.get('searchValue')) {
+   // if (instance.templateDictionary.get('searchValue')) {
       // If search parameter is defined, filter results
-      const searchVal = instance.templateDictionary.get('searchValue');
-      const searchEXP = `.*${searchVal}.*`;
-      return Stuff.find({ recipe: { $regex: searchEXP, $options: 'i' } });
-    }
+    const searchVal = instance.templateDictionary.get('searchValue');
+    const searchEXP = `.*${searchVal}.*`;
+     // return Stuff.find({ recipe: { $regex: searchEXP, $options: 'i' } });
+    // }
     // Otherwise, return all of the stuff
-    return Stuff.find();
+    return Stuff.find({ recipe: { $regex: searchEXP, $options: 'i' } });
   },
 });
+
+
+
+
+Template.Search_Ingredients_Page.onCreated(function () {
+  this.templateDictionary = new ReactiveDict();
+  Meteor.subscribe('stuffSearch');
+});
+
+Template.Search_Ingredients_Page.events({
+  'submit .center.aligned.button': function (event, instance) {
+    instance.templateDictionary.set('searchValue2', $('#searchValue2').val());
+    event.preventDefault();
+  },
+});
+
+
+Template.Search_Ingredients_Page.helpers({
+  /**
+   * @returns documents with name matching searchValue
+   */
+  stuffSearch() {
+    const instance = Template.instance();
+    // if (instance.templateDictionary.get('searchValue')) {
+    // If search parameter is defined, filter results
+    const searchVal = instance.templateDictionary.get('searchValue2');
+    const searchEXP = `.*${searchVal}.*`;
+    // return Stuff.find({ recipe: { $regex: searchEXP, $options: 'i' } });
+    // }
+    // Otherwise, return all of the stuff
+    return Stuff.find({ ingredients: { $regex: searchEXP, $options: 'i' } });
+  },
+});
+
