@@ -1,97 +1,101 @@
 <template name="Search_Stuff_Page">
-  {{#If_Logged_In}}
-  <h2 class="center aligned ui header">Search Recipes by Name</h2>
-  <div class="search">
-    <form class="center aligned button">
-      <input type="text" id="searchValue" placeholder="Recipe Name" required>
-      <button type="submit">Search</button>
-    </form>
+  <div class="ui search container">
+
+    {{#If_Logged_In}}
+      <h2 class="center aligned ui header">Search Recipes by Name</h2>
+      <div class="search">
+        <form class="center aligned button">
+          <input type="text" id="searchValue" placeholder="Recipe Name" required>
+          <button type="submit">Search</button>
+        </form>
+      </div>
+
+      <div class="ui container">
+        {{#if Template.subscriptionsReady}}
+
+
+          <table style="margin-top: 20px" class="ui striped celled table">
+            <tbody>
+            {{#each stuff in stuffSearch}}
+
+              <tr>
+                <td>{{stuff.recipe}}</td>
+
+                <td><a href="{{pathFor 'Edit_Stuff_Page' _id=stuff._id}}">View Full Recipe</a></td>
+              </tr>
+            {{/each}}
+            </tbody>
+          </table>
+        {{else}}
+          {{> Loading}}
+        {{/if}}
+      </div>
+
+      <h2 class="center aligned ui header">Search Recipes by Category</h2>
+
+      <div class="ui three column search grid">
+        <div class="column">
+          <div class="ui fluid card">
+            <div class="image">
+              <img src="/images/coffee.jpg">
+            </div>
+            <div class="content">
+              <a class="header" href="{{pathFor 'List_Searched_Stuff_Page_Breakfast' _id=stuff._id}}">Breakfast</a>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="ui fluid card">
+            <div class="image">
+              <img src="/images/burger.jpeg">
+            </div>
+            <div class="content">
+              <a class="header" href="{{pathFor 'List_Searched_Stuff_Page_Lunch' _id=stuff._id}}">Lunch</a>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="ui fluid card">
+            <div class="image">
+              <img src="/images/salmon.jpeg">
+            </div>
+            <div class="content">
+              <a class="header" href="{{pathFor 'List_Searched_Stuff_Page_Dinner' _id=stuff._id}}">Dinner</a>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="ui fluid card">
+            <div class="image">
+              <img src="/images/macarons.jpeg">
+            </div>
+            <div class="content">
+              <a class="header" href="{{pathFor 'List_Searched_Stuff_Page_Dessert' _id=stuff._id}}">Dessert</a>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="ui fluid card">
+            <div class="image">
+              <img src="/images/appetizer.png">
+            </div>
+            <div class="content">
+              <a class="header" href="{{pathFor 'List_Searched_Stuff_Page_Appetizers' _id=stuff._id}}">Appetizers</a>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="ui fluid card">
+            <div class="image">
+              <img src="/images/drinks.png">
+            </div>
+            <div class="content">
+              <a class="header" href="{{pathFor 'List_Searched_Stuff_Page_Drinks' _id=stuff._id}}">Drinks</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    {{/If_Logged_In}}
   </div>
 
-  <div class="ui container">
-    {{#if Template.subscriptionsReady}}
-
-
-      <table style="margin-top: 20px" class="ui striped celled table">
-      <tbody>
-      {{#each stuff in stuffSearch}}
-       
-      <tr>
-        <td>{{stuff.recipe}}</td>
-
-        <td><a href="{{pathFor 'Edit_Stuff_Page' _id=stuff._id}}">View Full Recipe</a></td>
-      </tr>
-      {{/each}}
-      </tbody>
-    </table>
-    {{else}}
-    {{> Loading}}
-    {{/if}}
-  </div>
-
-  <h2 class="center aligned ui header">Search Recipes by Category</h2>
-
-  <div class="ui three column search grid">
-    <div class="column">
-      <div class="ui fluid card">
-        <div class="image">
-          <img src="/images/coffee.jpg">
-        </div>
-        <div class="content">
-          <a class="header" href="{{pathFor 'List_Searched_Stuff_Page_Breakfast' _id=stuff._id}}">Breakfast</a>
-        </div>
-      </div>
-    </div>
-    <div class="column">
-      <div class="ui fluid card">
-        <div class="image">
-          <img src="/images/burger.jpeg">
-        </div>
-        <div class="content">
-          <a class="header" href="{{pathFor 'List_Searched_Stuff_Page_Lunch' _id=stuff._id}}">Lunch</a>
-        </div>
-      </div>
-    </div>
-    <div class="column">
-      <div class="ui fluid card">
-        <div class="image">
-          <img src="/images/salmon.jpeg">
-        </div>
-        <div class="content">
-          <a class="header" href="{{pathFor 'List_Searched_Stuff_Page_Dinner' _id=stuff._id}}">Dinner</a>
-        </div>
-      </div>
-    </div>
-    <div class="column">
-      <div class="ui fluid card">
-        <div class="image">
-          <img src="/images/macarons.jpeg">
-        </div>
-        <div class="content">
-          <a class="header" href="{{pathFor 'List_Searched_Stuff_Page_Dessert' _id=stuff._id}}">Dessert</a>
-        </div>
-      </div>
-    </div>
-    <div class="column">
-      <div class="ui fluid card">
-        <div class="image">
-          <img src="/images/appetizer.png">
-        </div>
-        <div class="content">
-          <a class="header" href="{{pathFor 'List_Searched_Stuff_Page_Appetizers' _id=stuff._id}}">Appetizers</a>
-        </div>
-      </div>
-    </div>
-    <div class="column">
-      <div class="ui fluid card">
-        <div class="image">
-          <img src="/images/drinks.png">
-        </div>
-        <div class="content">
-          <a class="header" href="{{pathFor 'List_Searched_Stuff_Page_Drinks' _id=stuff._id}}">Drinks</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  {{/If_Logged_In}}
 </template>

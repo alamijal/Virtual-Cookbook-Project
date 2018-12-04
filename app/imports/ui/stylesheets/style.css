@@ -121,3 +121,7 @@ padding-bottom:20px;
 .pre {
   white-space: pre-wrap;
 }
+.ui.search.container {
+  background-color:#F6F5F2;
+  width: 100%;
+}
