@@ -23,13 +23,13 @@ Template.Search_Stuff_Page.helpers({
    */
   stuffSearch() {
     const instance = Template.instance();
-    if (instance.templateDictionary.get('searchValue')) {
+   // if (instance.templateDictionary.get('searchValue')) {
       // If search parameter is defined, filter results
       const searchVal = instance.templateDictionary.get('searchValue');
       const searchEXP = `.*${searchVal}.*`;
-      return Stuff.find({ recipe: { $regex: searchEXP, $options: 'i' } });
-    }
+     // return Stuff.find({ recipe: { $regex: searchEXP, $options: 'i' } });
+    //}
     // Otherwise, return all of the stuff
-    return Stuff.find();
+    return Stuff.find({ recipe: { $regex: searchEXP, $options: 'i' } });
   },
 });

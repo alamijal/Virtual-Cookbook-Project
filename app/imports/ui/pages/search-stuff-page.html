@@ -10,20 +10,12 @@
 
   <div class="ui container">
     {{#if Template.subscriptionsReady}}
-    <table style="margin-top: 20px" class="ui striped celled table">
-      <thead>
-      <tr>
-        <th>Recipe</th>
-        <th>Select</th>
 
-        {{#If_Logged_In}}
 
-        {{/If_Logged_In}}
-      </tr>
-      </thead>
-
+      <table style="margin-top: 20px" class="ui striped celled table">
       <tbody>
       {{#each stuff in stuffSearch}}
+       
       <tr>
         <td>{{stuff.recipe}}</td>
 
