@@ -20,6 +20,12 @@ AutoForm.hooks({
       FlowRouter.go('List_Stuff_Page');
     },
   },
+  deleteButton: {
+    onSuccess: function onSuccess(formtype, result) {
+      Stuff.remove({ _id: FlowRouter.getParam('_id') });
+      FlowRouter.go('/');
+    },
+  },
 });
 
 Template.Edit_Page.helpers({
@@ -28,5 +34,9 @@ Template.Edit_Page.helpers({
   },
   stuffCollection() {
     return Stuff;
+  },
+  'submit center.aligned.button.delete': function (event, instance) {
+    Stuff.remove({ _id: FlowRouter.getParam('_id') });
+    FlowRouter.go('/');
   },
 });
