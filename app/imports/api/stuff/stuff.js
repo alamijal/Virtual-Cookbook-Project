@@ -1,5 +1,7 @@
 import { Mongo } from 'meteor/mongo';
 import { SimpleSchema } from 'meteor/aldeed:simple-schema';
+import { Meteor } from 'meteor/meteor';
+import { check } from 'meteor/check';
 
 /* eslint-disable object-shorthand */
 
@@ -79,4 +81,20 @@ export const StuffSchema = new SimpleSchema({
 });
 
 Stuff.attachSchema(StuffSchema);
-console.log('hello');
+
+Meteor.methods({
+  'stuff.insert'(newRecipe) {
+    check(newRecipe, StuffSchema);
+
+    // Make sure the user is logged in before inserting a task
+    if (!Meteor.userId()) {
+      throw new Meteor.Error('not-authorized');
+    }
+
+    Stuff.insert({ newRecipe });
+  },
+  'stuff.remove'(removeRecipe) {
+    check(removeRecipe, StuffSchema);
+    Stuff.remove(removeRecipe);
+  },
+});
