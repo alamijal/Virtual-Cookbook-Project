@@ -1,7 +1,6 @@
 /* eslint-disable meteor/no-session */
 import { Template } from 'meteor/templating';
 import { Session } from 'meteor/session';
-import { FlowRouter } from 'meteor/kadira:flow-router';
 import { Stuff } from '../../api/stuff/stuff.js';
 
 

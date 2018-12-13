@@ -1,9 +1,9 @@
+/* eslint-disable meteor/no-session */
 /* eslint-env jquery */
 import { Meteor } from 'meteor/meteor';
 import { Template } from 'meteor/templating';
 import { FlowRouter } from 'meteor/kadira:flow-router';
 import { Session } from 'meteor/session';
-import { AutoForm } from 'meteor/aldeed:autoform';
 import { ReactiveDict } from 'meteor/reactive-dict';
 import { Stuff } from '../../api/stuff/stuff.js';
 
@@ -43,8 +43,6 @@ Template.Search_Stuff_Page.helpers({
     return Stuff.find({ recipe: { $regex: searchEXP, $options: 'i' } });
   },
 });
-
-
 
 
 Template.Search_Ingredients_Page.onCreated(function () {
